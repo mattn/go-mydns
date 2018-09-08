@@ -38,7 +38,7 @@ export MYDNS_MASTERID=xxxxxxxxx
 export MYDNS_PASSWORD=yyyyyyyyy
 ```
 
-Windows で毎回設定するの面倒な場合はシステム環境変数に登録して下さい。
+Windows で毎回設定するのが面倒な場合はシステム環境変数に登録して下さい。
 
 ## 使い方
 
