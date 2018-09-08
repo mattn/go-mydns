@@ -56,6 +56,25 @@ lego --accept-tos --dns exec --email メールアドレス --domains sugoi-domai
 
 Windows であればタスクスケジューラに登録しておくとよいでしょう。
 
+生成された証明書は .lego/certificates に生成されます。必要であれば `--path` オプションを追加して下さい。
+
+## ウェブサーバで使う
+
+nginx の場合は以下の様に設定して下さい。
+
+```
+server {
+    listen 443 ssl http2;
+    server_name sugoi-domain.mydns.jp *.sugoi-domain.mydns.jp;
+
+    ssl on;
+    ssl_certificate /etc/letsencrypt/certificates/sugoi-domain.mydns.jp.crt;
+    ssl_certificate_key /etc/letsencrypt/certificates/sugoi-domain.mydns.jp.key;
+
+    ... 略 ...
+}
+```
+
 ## License
 
 MIT
