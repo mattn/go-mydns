@@ -1,5 +1,7 @@
 # lego-mydns
 
+【注意】lego にビルドインで組み込む pull-request を予定しています。
+
 lego を使い MyDNS で Let's Encrypt ワイルドカード証明書を作る為のコマンド
 
 ## インストール方法
